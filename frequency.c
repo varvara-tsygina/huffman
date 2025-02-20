@@ -1,4 +1,5 @@
 #include "huffman.h"
+//get type
 FileType getfiletype(const char* filename) {
     const char* ext = strrchr(filename, '.'); 
 
@@ -25,6 +26,7 @@ FileType getfiletype(const char* filename) {
     return FILE_TYPE_UNKNOWN;
 }
 
+//create frequancy table
 
 void buildfreqtabl(const char* filename, unsigned int arr[]) {
     FILE* fr = fopen(filename, "rb");
