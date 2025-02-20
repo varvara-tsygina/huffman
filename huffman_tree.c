@@ -1,6 +1,6 @@
 #include "huffman.h"
 #include <string.h>
-
+// fix problems
 NODE* addToList(NODE* head, NODE* newNode) {
     if (!head) {
         return newNode;
